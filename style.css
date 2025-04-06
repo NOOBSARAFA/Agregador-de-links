@@ -1,0 +1,77 @@
+body *{
+  padding: 0;
+  color: aliceblue;
+   
+}
+body {
+  background: url(./assets/bg-mobile\ -\ Copia.jpg);
+  background-size: cover;
+  padding: 0;
+}
+#container {
+  color: aliceblue;
+  width: 360px;
+ /*border: 2px solid red;*/
+  margin: auto;
+  font-weight: 700;
+}
+#profile {
+  /*profile pai*/
+  /*border: 2px solid red;*/
+  text-align: center;
+  padding: 24px;
+}
+#profile img {
+  /*border: 2px solid red;*/
+
+  width: 112px;
+}
+#social-links{
+  font-size: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  
+}
+#social-links :hover{
+  background-color: rgba(255, 255, 255, 0.05);
+ 
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+footer{
+  text-align: center;
+  padding: 24px;
+}
+p{
+  text-align: center;
+  
+}
+ul {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+}
+ul li a {
+  /*border: 3px solid red;*/
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.5s;/*transicao do fundo dos links*/
+
+}
+ul li a:hover{
+  background: rgba(255,255,255,0.05);
+  border: 2px solid white;
+}
