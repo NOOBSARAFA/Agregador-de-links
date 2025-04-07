@@ -4,8 +4,8 @@ body *{
    
 }
 body {
- /*background-image: url("bg-mobile-Copia.jpg");*/
-  background-color:black;
+ /*background-image: url("bg-mobile-Copia.jpg");nao da funcionando n sei pq*/ 
+  background-color: black;
   background-size: cover;
   padding: 0;
 }
