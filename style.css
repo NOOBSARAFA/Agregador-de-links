@@ -4,7 +4,8 @@ body *{
    
 }
 body {
-  background: url(./assets/bg-mobile\ -\ Copia.jpg);
+  /*background: url(./assets/bg-mobile\ -\ Copia.jpg);*/
+  background: red;
   background-size: cover;
   padding: 0;
 }
