@@ -1,15 +1,31 @@
 body *{
   padding: 0;
-  color: aliceblue;
+  color:var(--text-color);
    
 }
 body {
-  background: url(./bg-mobile\ -\ Copia.jpg);
-  /*background: red;*/
+  background: var(--bg-url) no-repeat top center/cover;
+  
   background-size: cover;
   padding: 0;
   
 }
+:root{
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobiledark.jpg);
+  --stroke-collor:rgba(255, 255, 255, 0.5);
+  --surface-collor:rgba(255, 255, 255, 0.1);
+  --switch-bg-url: url(./assets/sun.svg);
+
+}
+.light{
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-collor: rgba(0, 0, 0, 0.5);
+  --surface-collor:rgba(0, 0, 0, 0.05);
+  --switch-bg-url: url(./assets/moonstart.svg);
+}
+
 #container {
   color: aliceblue;
   width: 360px;
@@ -17,6 +33,7 @@ body {
   margin: auto;
   font-weight: 700;
 }
+/*profile*/
 #profile {
   /*profile pai*/
   /*border: 2px solid red;*/
@@ -27,6 +44,39 @@ body {
   /*border: 2px solid red;*/
 
   width: 112px;
+}
+/*switch*/
+#switch{
+  position: relative;
+  width: 64px;
+  margin: auto;
+}
+#switch button{
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center ;
+  border: 0;
+  top: 50%;
+  left: 0;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+.light #switch button{
+  right: 0;
+  left: initial;
+}
+#switch span{
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-collor);
+  border: 1px solid var(--stroke-collor);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 999px;
+
 }
 #social-links{
   font-size: 30px;
@@ -65,9 +115,9 @@ ul li a {
   justify-content: center;
   align-items: center;
   display: flex;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--surface-collor);
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--stroke-collor);
   text-decoration: none;
   font-weight: 700;
   transition: background 0.5s;/*transicao do fundo dos links*/
@@ -75,5 +125,5 @@ ul li a {
 }
 ul li a:hover{
   background: rgba(255,255,255,0.05);
-  border: 2px solid white;
+  border: 2px solid var(--stroke-collor);
 }
