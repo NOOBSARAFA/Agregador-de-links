@@ -12,7 +12,7 @@ body {
 }
 :root{
   --text-color: white;
-  --bg-url: url(./assets/bg-mobiledark.jpg);
+  --bg-url: url(./bg-mobiledark.jpg);
   --stroke-collor:rgba(255, 255, 255, 0.5);
   --surface-collor:rgba(255, 255, 255, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
@@ -20,10 +20,10 @@ body {
 }
 .light{
   --text-color: black;
-  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --bg-url: url(./bg-mobile-light.jpg);
   --stroke-collor: rgba(0, 0, 0, 0.5);
   --surface-collor:rgba(0, 0, 0, 0.05);
-  --switch-bg-url: url(./assets/moonstart.svg);
+  --switch-bg-url: url(./moonstart.svg);
 }
 
 #container {
