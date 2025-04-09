@@ -15,7 +15,7 @@ body {
   --bg-url: url(./bg-mobiledark.jpg);
   --stroke-collor:rgba(255, 255, 255, 0.5);
   --surface-collor:rgba(255, 255, 255, 0.1);
-  --switch-bg-url: url(./assets/sun.svg);
+  --switch-bg-url: url(./sun.svg);
 
 }
 .light{
